@@ -1,4 +1,4 @@
-# Computer Security and Various Thoughts
+# Content
 ## Computer Security
 [Computer Security](/posts/cs/cs.md)
 ## Machine Learning
