@@ -1,12 +1,5 @@
-# Content
-## Computer Security
-[Computer Security](/posts/cs/cs.md)
-## Machine Learning
-[Computer Security](/posts/cs/cs.md)
-## Music
-[Computer Security](/posts/cs/cs.md)
-## Sport
-[Computer Security](/posts/cs/cs.md)
-### badminton 
-[Computer Security](/posts/cs/cs.md)
-## About
+# category
+## [Computer Security](/posts/cs/cs.md)
+## [Machine Learning](/posts/cs/cs.md)
+## [Sport](/posts/cs/cs.md)
+### [badminton](/posts/cs/cs.md)
