@@ -10,7 +10,6 @@ def generate_header(c, name, flag=False, url=""):
 posts = "./posts"
 index_file = "index.md"
 contents = "contents.md"
-contents_url = "./" + contents
 
 file_type_list = ["md", "html"]
 
@@ -20,7 +19,7 @@ f_index.write(s)
 
 i = 0
 for root, dirs, files in os.walk(posts):
-    # print(root)
+    print(root)
     i += 1
     # 跳过posts目录
     if i == 1: continue
@@ -37,9 +36,9 @@ for root, dirs, files in os.walk(posts):
             flag = True
             break
     if flag:
-        s =  generate_header(c, header_name.title(), flag = True, url = contents_url)
+        contents_path = root + "./" + contents
+        s =  generate_header(c, header_name.title(), flag = True, url = contents_path)
         f_index.write(s)
-        contents_path = root + contents_url
         f_contents = open(contents_path, "w")
         s = generate_header(1, "Contents")
         f_contents.write(s)
