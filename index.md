@@ -1,6 +1,6 @@
 # Category
-# computer security
-# machine learning
-# [music](./contents.md)
-# sport
-# tmp
+# Computer Security
+# Machine Learning
+# [Music](./contents.md)
+# Sport
+# Tmp

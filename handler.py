@@ -37,7 +37,7 @@ for root, dirs, files in os.walk(posts):
             flag = True
             break
     if flag:
-        s =  generate_header(c, header_name, flag = True, url = contents_url)
+        s =  generate_header(c, header_name.title(), flag = True, url = contents_url)
         f_index.write(s)
         contents_path = root + contents_url
         f_contents = open(contents_path, "w")
@@ -53,7 +53,7 @@ for root, dirs, files in os.walk(posts):
                 f_contents.write(s)
         f_contents.close()
     else:
-        s =  generate_header(c, header_name, flag = False)
+        s =  generate_header(c, header_name.title(), flag = False)
         f_index.write(s)
 f_index.close()
 print("Successful!")
