@@ -1,4 +1,5 @@
 import os
+from typing import ContextManager
 
 def generate_header(c, name, flag=False, url=""):
     if flag:
@@ -10,7 +11,6 @@ def generate_header(c, name, flag=False, url=""):
 posts = "./posts"
 index_file = "index.md"
 contents = "contents.md"
-contents_url = "./" + contents
 
 file_type_list = ["md", "html"]
 
@@ -37,10 +37,12 @@ for root, dirs, files in os.walk(posts):
             flag = True
             break
     if flag:
+        # 添加相对链接
+        contents_url = root + "/" + contents
         s =  generate_header(c, header_name.title(), flag = True, url = contents_url)
+        print(s)
         f_index.write(s)
-        contents_path = root + contents_url
-        f_contents = open(contents_path, "w")
+        f_contents = open(contents_url, "w")
         s = generate_header(1, "Contents")
         f_contents.write(s)
         for file in files:
