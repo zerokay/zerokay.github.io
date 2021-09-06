@@ -1,2 +1,2 @@
-# Contents
-## [2021-09-06_用数学理解乐理知识](/2021-09-06_用数学理解乐理知识.html)
+# Contents - Music
+## [music](./music.html)
