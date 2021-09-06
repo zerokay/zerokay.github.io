@@ -14,7 +14,7 @@ contents = "contents.md"
 
 file_type_list = ["md", "html"]
 
-f_index = open(index_file, "w")
+f_index = open(index_file, "w",  encoding='utf-8')
 s = generate_header(1, "Category")
 f_index.write(s)
 
@@ -42,7 +42,7 @@ for root, dirs, files in os.walk(posts):
         s =  generate_header(c, header_name.title(), flag = True, url = contents_url)
         print(s)
         f_index.write(s)
-        f_contents = open(contents_url, "w")
+        f_contents = open(contents_url, "w", encoding="utf-8")
         s = generate_header(1, "Contents")
         f_contents.write(s)
         for file in files:
