@@ -1,3 +1,3 @@
 # Category
-# [Music](./posts\music/contents.md)
+# [Music](/posts/music/contents.md)
 # Tmp
